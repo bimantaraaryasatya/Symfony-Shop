@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup_style.css">
 </head>
 <body>
     <div class="sign-up-container">
@@ -26,10 +26,10 @@
             <input type="password" name="confirm-password" id="confirm-password">
         </div>
         <div class="sign-up-btn">
-            <a href="file:///C:/Telkom/TEFA/Symfony%20Sign%20In/index.html" class="btn">Sign Up</a>
+            <a href="signin.php" class="btn">Sign Up</a>
         </div>
         <div class="to-signin">
-            <p>already have an account? <a href="file:///C:/Telkom/TEFA/Symfony%20Sign%20In/index.html" class="sign-in">Sign In</a></p>
+            <p>already have an account? <a href="signin.php" class="sign-in">Sign In</a></p>
         </div>
     </div>
 </body>

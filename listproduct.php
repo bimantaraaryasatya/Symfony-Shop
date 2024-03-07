@@ -18,7 +18,7 @@
         </ul>
 
         <div class="logo-img">
-            <img src="Logo.png">
+            <img src="images/Logo.png">
         </div>
 
         <ul class="navbar-end">
@@ -27,7 +27,7 @@
         </ul>
         
         <div class="profile-cart">
-            <a href="file:///C:/Telkom/TEFA/Symfony%20Sign%20In/index.html"><i class="fa-solid fa-user"></i></a>
+            <a href="signin.php"><i class="fa-solid fa-user"></i></a>
             <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </header>
@@ -43,25 +43,25 @@
             </div>
             <div class="product-card-list">
                 <div class="card">
-                    <img src="fender.png">
+                    <img src="images/fender.png">
                     <p>Fender American 60s Stratocaster</p>
                     <p>IDR 15,300,000</p>
                 </div>
 
                 <div class="card">
-                    <img src="gibson.png">
+                    <img src="images/gibson.png">
                     <p>Gibson Les Paul Classic Ebony</p>
                     <p>IDR 35,500,000</p>
                 </div>
 
                 <div class="card">
-                    <img src="telecaster.png">
+                    <img src="images/telecaster.png">
                     <p>Fender Gold Foil Telecaster</p>
                     <p>IDR 24,000,000</p>
                 </div>
 
                 <div class="card">
-                    <img src="ibanez.png">
+                    <img src="images/ibanez.png">
                     <p>Ibanez RG470AHMZ</p>
                     <p>IDR 11,187,000</p>
                 </div>
@@ -80,25 +80,25 @@
             </div>
             <div class="product-card-list">
                 <div class="card">
-                    <img src="sireBass.png">
+                    <img src="images/sireBass.png">
                     <p>Sire Marcuss Miller V3 5 Strings</p>
                     <p>IDR 6,250,000</p>
                 </div>
 
                 <div class="card">
-                    <img src="yamahaBass.png">
+                    <img src="images/yamahaBass.png">
                     <p>Yamaha Bass Elektrik BB234</p>
                     <p>IDR 3,100,000</p>
                 </div>
 
                 <div class="card">
-                    <img src="jacksonBass.png">
+                    <img src="images/jacksonBass.png">
                     <p>Jackson JS Series Concert Bass</p>
                     <p>IDR 7,400,000</p>
                 </div>
 
                 <div class="card">
-                    <img src="yamahaBassTRBX.png">
+                    <img src="images/yamahaBassTRBX.png">
                     <p>Yamaha Bass Elektrik TRBX304</p>
                     <p>IDR 5,000,000</p>
                 </div>
@@ -117,32 +117,32 @@
             </div>
             <div class="product-card-list">
                 <div class="card">
-                    <img src="eastarDrum.png">
+                    <img src="images/eastarDrum.png">
                     <p style="margin-top: 37px;">Eastar Drum Set 5 Piece</p>
                     <p>IDR 15,500,000</p>
                 </div>
 
                 <div class="card">
-                    <img src="pearl-target-series-drum-kit.jpg" style="margin-top: 50px; height: 290px; width: 290px;">
+                    <img src="images/pearl-target-series-drum-kit.jpg" style="margin-top: 50px; height: 290px; width: 290px;">
                     <p style="margin-top: 40px;">Pearl Target Series TGC625C</p>
                     <p>IDR 15,300,000</p>
                 </div>
 
                 <div class="card">
-                    <img src="kadenceDrum.png">
+                    <img src="images/kadenceDrum.png">
                     <p style="margin-top:17px ;">Kadence Wine Red Fusion Drum</p>
                     <p>IDR 33,000,000</p>
                 </div>
 
                 <div class="card">
-                    <img src="yamahaStageDrum.jpg" style="margin-top: 60px;">
+                    <img src="images/yamahaStageDrum.jpg" style="margin-top: 60px;">
                     <p style="margin-top: 72px;">Yamaha Stage Custom Drum Kit</p>
                     <p>IDR 11,187,000</p>
                 </div>
             </div>
 
             <div class="button">
-                <div class="product-btn">
+                <div class="images/product-btn">
                     <a href="#">Lihat Semua <br> Produk</a>
                 </div> 
             </div>
