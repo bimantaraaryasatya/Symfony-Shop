@@ -13,8 +13,8 @@
     <header>
 
         <ul class="navbar-start">
-          <li><a href="file:///C:/Telkom/TEFA/Symfony%20Home%20Page/home.html" class="home" id="home-nav">Home</a></li>
-          <li><a href="file:///C:/Telkom/TEFA/Symfony%20List%20Produk/listproduct.html" class="product" id="product-nav">Product</a></li>
+          <li><a href="index.php" class="home" id="home-nav">Home</a></li>
+          <li><a href="listproduct.php" class="product" id="product-nav">Product</a></li>
         </ul>
 
         <div class="logo-img">
@@ -142,7 +142,7 @@
             </div>
 
             <div class="button">
-                <div class="images/product-btn">
+                <div class="product-btn">
                     <a href="#">Lihat Semua <br> Produk</a>
                 </div> 
             </div>

@@ -21,7 +21,7 @@
 
         </div>
         <div class="sign-up-btn">
-            <a href="file:///C:/Telkom/TEFA/Symfony%20Home%20Page/home.html" class="btn">Sign In</a>
+            <a href="index.php" class="btn">Sign In</a>
         </div>
         <div class="to-signin">
             <p>already have an account? <a href="signup.php" class="sign-in">Sign Up</a></p>
