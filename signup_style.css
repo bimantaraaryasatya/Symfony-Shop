@@ -60,6 +60,7 @@ body{
 
 .sign-up-btn{
     display: grid;
+    border: 1px solid #6563ff;
     place-content: center;
     background-color: #6563ff;
     text-align: center;
@@ -75,7 +76,6 @@ body{
 
 .sign-up-btn .btn{
     display: inline-block;
-    padding: 11px 152px;
     text-decoration: none;
     color: #fff;
     text-align: center;
