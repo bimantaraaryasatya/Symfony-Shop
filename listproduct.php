@@ -243,7 +243,7 @@
                 <li><a href="#">Tentang Symfony Shop</a></li>
                 <li><a href="#">Lokasi di Google Maps</a></li>
               </ul>
-            </div>
+            </div> 
     
             <div class="list">
               <h4>Hubungi Kami</h4>
