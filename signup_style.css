@@ -59,6 +59,7 @@ body{
 }
 
 .sign-up-btn{
+    margin-top: 20px;
     display: grid;
     border: 1px solid #6563ff;
     place-content: center;

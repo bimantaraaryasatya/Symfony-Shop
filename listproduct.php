@@ -42,31 +42,23 @@
                 <h3>Gitar Elektrik</h3>
             </div>
             <div class="product-card-list">
-                <div class="card">
-                    <img src="images/fender.png">
-                    <p>Fender American 60s Stratocaster</p>
-                    <p>IDR 15,300,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/gibson.png">
-                    <p>Gibson Les Paul Classic Ebony</p>
-                    <p>IDR 35,500,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/telecaster.png">
-                    <p>Fender Gold Foil Telecaster</p>
-                    <p>IDR 24,000,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/ibanez.png">
-                    <p>Ibanez RG470AHMZ</p>
-                    <p>IDR 11,187,000</p>
-                </div>
+                <?php
+                    include("functions.php");
+                    $queryBarang = mysqli_query($conn, "select * from barang");
+                    $sqlBarang_Gitar = "SELECT * FROM barang WHERE `id-Kategori` = '1'";
+                    $queryBarang_Gitar = mysqli_query($conn, $sqlBarang_Gitar);
+                    $queryBarang_Bass = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '2' ");
+                    while ($dataBarang_Gitar = mysqli_fetch_array($queryBarang_Gitar)){
+                ?>
+                        <div class="card">
+                            <img src="images/<?=$dataBarang_Gitar['foto_Barang']?>">
+                            <p><?=$dataBarang_Gitar['nama_Barang']?></p>
+                            <p><?=$dataBarang_Gitar['harga_Barang']?></p>
+                        </div>
+                <?php
+                    }
+                ?>
             </div>
-
             <div class="button">
                 <div class="product-btn">
                     <a href="#">Lihat Semua <br> Produk</a>
