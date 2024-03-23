@@ -44,16 +44,20 @@
             <div class="product-card-list">
                 <?php
                     include("functions.php");
+
+                    //pasang-pasang variabel
                     $queryBarang = mysqli_query($conn, "select * from barang");
-                    $sqlBarang_Gitar = "SELECT * FROM barang WHERE `id-Kategori` = '1'";
-                    $queryBarang_Gitar = mysqli_query($conn, $sqlBarang_Gitar);
+                    $queryBarang_Gitar = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '1' ");
                     $queryBarang_Bass = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '2' ");
+                    $queryBarang_Drum = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '3' ");
+                    $queryBarang_Keyboard = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '4' ");
+                    $queryBarang_Microphone = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '5' ");
                     while ($dataBarang_Gitar = mysqli_fetch_array($queryBarang_Gitar)){
                 ?>
                         <div class="card">
                             <img src="images/<?=$dataBarang_Gitar['foto_Barang']?>">
                             <p><?=$dataBarang_Gitar['nama_Barang']?></p>
-                            <p><?=$dataBarang_Gitar['harga_Barang']?></p>
+                            <p>IDR <?=number_format($dataBarang_Gitar['harga_Barang'], 0, ',', '.')?></p>
                         </div>
                 <?php
                     }
@@ -71,31 +75,18 @@
                 <h3>Bass Gitar</h3>
             </div>
             <div class="product-card-list">
-                <div class="card">
-                    <img src="images/sireBass.png">
-                    <p>Sire Marcuss Miller V3 5 Strings</p>
-                    <p>IDR 6,250,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/yamahaBass.png">
-                    <p>Yamaha Bass Elektrik BB234</p>
-                    <p>IDR 3,100,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/jacksonBass.png">
-                    <p>Jackson JS Series Concert Bass</p>
-                    <p>IDR 7,400,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/yamahaBassTRBX.png">
-                    <p>Yamaha Bass Elektrik TRBX304</p>
-                    <p>IDR 5,000,000</p>
-                </div>
+                <?php
+                    while ($dataBarang_Bass = mysqli_fetch_array($queryBarang_Bass)){
+                ?>
+                        <div class="card">
+                            <img src="images/<?=$dataBarang_Bass['foto_Barang']?>">
+                            <p><?=$dataBarang_Bass['nama_Barang']?></p>
+                            <p>IDR <?=number_format($dataBarang_Bass['harga_Barang'], 0, ',', '.')?></p>
+                        </div>
+                <?php   
+                    }
+                ?>
             </div>
-
             <div class="button">
                 <div class="product-btn">
                     <a href="#">Lihat Semua <br> Produk</a>
@@ -108,31 +99,18 @@
                 <h3>Drum</h3>
             </div>
             <div class="product-card-list">
-                <div class="card">
-                    <img src="images/eastarDrum.png">
-                    <p style="margin-top: 37px;">Eastar Drum Set 5 Piece</p>
-                    <p>IDR 15,500,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/pearl-target-series-drum-kit.jpg" style="margin-top: 50px; height: 290px; width: 290px;">
-                    <p style="margin-top: 40px;">Pearl Target Series TGC625C</p>
-                    <p>IDR 15,300,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/kadenceDrum.png">
-                    <p style="margin-top:17px ;">Kadence Wine Red Fusion Drum</p>
-                    <p>IDR 33,000,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="images/yamahaStageDrum.jpg" style="margin-top: 60px;">
-                    <p style="margin-top: 72px;">Yamaha Stage Custom Drum Kit</p>
-                    <p>IDR 11,187,000</p>
-                </div>
+                <?php
+                    while ($dataBarang_Drum = mysqli_fetch_array($queryBarang_Drum)){
+                ?>
+                        <div class="card">
+                            <img src="images/<?=$dataBarang_Drum['foto_Barang']?>">
+                            <p style="margin-top: 37px;"><?=$dataBarang_Drum['nama_Barang']?></p>
+                            <p>IDR <?=number_format($dataBarang_Drum['harga_Barang'], 0, ',', '.')?></p>
+                        </div>
+                <?php
+                    }
+                ?>
             </div>
-
             <div class="button">
                 <div class="product-btn">
                     <a href="#">Lihat Semua <br> Produk</a>
@@ -145,31 +123,18 @@
                 <h3>Keyboard</h3>
             </div>
             <div class="product-card-list">
-                <div class="card">
-                    <img src="keyboardSynthesizer.png" style="margin-top: 130px ; ">
-                    <p style="margin-top: 86px;">Keyboard Synthesizer Yamaha CK-88</p>
-                    <p>IDR 17,300,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="yamahaPSRKeyboard.png" style="margin-top: 147px; margin-right: 10px;">
-                    <p style="margin-top: 95px;">Keyboard Yamaha PSR SX 600</p>
-                    <p>IDR 12,250,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="Yamaha-psr-sx900-1.jpg" style="margin-top: 70px;">
-                    <p style="margin-top: 58px;">Yamaha SX900 Touchscreen Arrange</p>
-                    <p>IDR 21,500,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="yamahaMm6Music.png" style="margin-top: 160px;">
-                    <p style="margin-top: 115px;">Fender American 60s Stratocaster</p>
-                    <p>IDR 21,500,000</p>
-                </div>
+                <?php
+                    while ($dataBarang_Keyboard = mysqli_fetch_array($queryBarang_Keyboard)){
+                ?>
+                        <div class="card">
+                            <img src="images/<?=$dataBarang_Keyboard['foto_Barang']?>">
+                            <p><?=$dataBarang_Keyboard['nama_Barang']?></p>
+                            <p>IDR <?=number_format($dataBarang_Keyboard['harga_Barang'], 0, ',', '.')?></p>
+                        </div>
+                <?php
+                    }
+                ?>
             </div>
-
             <div class="button">
                 <div class="product-btn">
                     <a href="#">Lihat Semua <br> Produk</a>
@@ -182,37 +147,25 @@
                 <h3>Microphone</h3>
             </div>
             <div class="product-card-list">
-                <div class="card">
-                    <img src="microphone1.png" style="margin-top: 55px;">
-                    <p style="margin-top: 29px;">Microphone Yamaha YM 79S </p>
-                    <p>IDR 129,000</p>  
-                </div>
-
-                <div class="card">
-                    <img src="supercardiodid.png" style="margin-top: 40px;">
-                    <p style="margin-top: 19px;">Supercardioid Wired Microphone</p>
-                    <p>IDR 135,500</p>
-                </div>
-
-                <div class="card">
-                    <img src="yamahaAG01.jpg" style="margin-top: 90px;">
-                    <p style="margin-top: 35px;">Yamaha AG01 Livestreaming USB</p>
-                    <p>IDR 174,000</p>
-                </div>
-
-                <div class="card">
-                    <img src="yamahaDM-105.png" style="margin-top: 10px;">
-                    <p style="margin-top: 5px;">Yamaha DM-105//Y Microphones</p>
-                    <p>IDR 101,000</p>
-                </div>  
+                <?php
+                    while ($dataBarang_Microphone = mysqli_fetch_array($queryBarang_Microphone)){
+                ?>
+                        <div class="card">
+                            <img src="images/<?=$dataBarang_Microphone['foto_Barang']?>">
+                            <p><?=$dataBarang_Microphone['nama_Barang']?></p>
+                            <p>IDR <?=number_format($dataBarang_Microphone['harga_Barang'], 0, ',', '.')?></p>
+                        </div>
+                <?php
+                    }
+                ?>
             </div>
-
             <div class="button">
                 <div class="product-btn">
                     <a href="#">Lihat Semua <br> Produk</a>
                 </div> 
             </div>
         </div>
+    </div>
     </div>
 
     <section id="contact">
@@ -265,6 +218,6 @@
           <p>Copyright © 2024 Symfony Shop. Hak & Cipta Terlindungi</p>
         </div>
         
-      </section>
+    </section>
 </body>
 </html>
