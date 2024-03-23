@@ -13,7 +13,7 @@
         </div>
         <div class="main-content">
 
-            <h4>Email</h4>
+            <h4>Username</h4>
             <input type="email" name="email" id="mail">
 
             <h4>Password</h4>
