@@ -2,8 +2,10 @@
     require "functions.php";
     if (isset($_POST["register"])){
         if(registrasi($_POST) > 0){
-            header("location: signin.php");
-            echo "<script> alert('user baru berhasil ditambahkan! ') </script>";
+            echo "  <script> 
+                        alert('user baru berhasil ditambahkan! ')
+                        window.location.href = 'signin.php' //ini untuk ketika kita pencet ok di alert akan href ke halaman tertentu 
+                    </script>";
         } else{
             echo mysqli_error($conn);
         }
