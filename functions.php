@@ -18,6 +18,7 @@
         $password = mysqli_real_escape_string($conn,$data["password"]);
         $password2 = mysqli_real_escape_string($conn,$data["password2"]);
         
+        // cek username, password dan konfirmasi sudah diisi atau belum
         if (empty($username) || empty($password) || empty($password2)) {
             echo "<script> alert('Masukan Username dan Password terlebih dahulu') </script>";
             return false;
