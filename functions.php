@@ -18,6 +18,11 @@
         $password = mysqli_real_escape_string($conn,$data["password"]);
         $password2 = mysqli_real_escape_string($conn,$data["password2"]);
         
+        if (empty($username) || empty($password) || empty($password2)) {
+            echo "<script> alert('Masukan Username dan Password terlebih dahulu') </script>";
+            return false;
+        }
+
         // cek username sudah ada atau belum
         $result = mysqli_query($conn, "SELECT username FROM user_register WHERE username = '$username'");
 

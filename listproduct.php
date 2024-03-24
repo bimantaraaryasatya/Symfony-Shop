@@ -127,7 +127,7 @@
                     while ($dataBarang_Keyboard = mysqli_fetch_array($queryBarang_Keyboard)){
                 ?>
                         <div class="card">
-                            <img src="images/<?=$dataBarang_Keyboard['foto_Barang']?>">
+                            <img style="margin-top: 130px;"src="images/<?=$dataBarang_Keyboard['foto_Barang']?>">
                             <p><?=$dataBarang_Keyboard['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Keyboard['harga_Barang'], 0, ',', '.')?></p>
                         </div>
