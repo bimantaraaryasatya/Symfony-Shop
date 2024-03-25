@@ -58,7 +58,7 @@ body{
     outline: none;
 }
 
-.sign-up-btn{
+.sign-in-btn{
     display: grid;
     place-content: center;
     background-color: #6563ff;
@@ -69,11 +69,11 @@ body{
     border-radius: 2px;
 }
 
-.sign-up-btn:hover{
+.sign-in-btn:hover{
     cursor: pointer;
 }
 
-.sign-up-btn .btn{
+.sign-in-btn .btn{
     display: inline-block;
     padding: 11px 152px;
     text-decoration: none;
@@ -81,15 +81,15 @@ body{
     text-align: center;
 }
 
-.to-signin{
+.to-signup{
     text-align: center;
     margin-top: 10px;
 }
 
-.to-signin p{
+.to-signup p{
     font-size: 12px;
 }
 
-.to-signin .sign-in{
+.to-signup .sign-up{
     text-decoration: none;
 }
