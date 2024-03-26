@@ -7,6 +7,22 @@
         $password = $_POST["password"];
 
         $result = mysqli_query($conn  ,"SELECT * FROM user_register WHERE username = '$username'");
+
+        //cek username
+        if (mysqli_num_rows($result) === 1) {
+
+            //cek password
+            $row = mysqli_fetch_assoc($result);
+            if (password_verify($password, $row["password"])) {
+                echo"   <script> 
+                            alert('Berhasil Sign In')
+                            window.location.href = 'index.php' 
+                        </script>";
+                exit;
+            } else {
+                echo "<script> alert ('Username atau Password Salah') </script>";
+            }
+        }
     }
 ?>
 
