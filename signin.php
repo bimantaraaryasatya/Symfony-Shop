@@ -8,6 +8,15 @@
 
         $result = mysqli_query($conn  ,"SELECT * FROM user_register WHERE username = '$username'");
 
+        // username dan password tidak boleh kosong 
+        if (empty($username) || empty($password)) {
+            echo "  <script> 
+                        alert('Masukan Username dan Password terlebih dahulu')
+                        window.location.href = 'signin.php'
+                    </script>";
+            return false;
+        }
+
         //cek username
         if (mysqli_num_rows($result) === 1) {
 
