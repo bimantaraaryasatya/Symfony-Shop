@@ -52,7 +52,13 @@
                     $queryBarang_Drum = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '3' ");
                     $queryBarang_Keyboard = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '4' ");
                     $queryBarang_Microphone = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '5' ");
+
+                    //mulai perulangan
+                    $counter = 0;
                     while ($dataBarang_Gitar = mysqli_fetch_array($queryBarang_Gitar)){
+                        if ($counter >= 4){
+                            break;
+                        }
                 ?>
                         <div class="card">
                             <img src="images/<?=$dataBarang_Gitar['foto_Barang']?>">
@@ -60,6 +66,7 @@
                             <p>IDR <?=number_format($dataBarang_Gitar['harga_Barang'], 0, ',', '.')?></p>
                         </div>
                 <?php
+                    $counter++;
                     }
                 ?>
             </div>
@@ -76,14 +83,19 @@
             </div>
             <div class="product-card-list">
                 <?php
+                    $counter = 0;
                     while ($dataBarang_Bass = mysqli_fetch_array($queryBarang_Bass)){
+                        if ($counter >= 4){
+                            break;
+                        }
                 ?>
                         <div class="card">
                             <img src="images/<?=$dataBarang_Bass['foto_Barang']?>">
                             <p><?=$dataBarang_Bass['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Bass['harga_Barang'], 0, ',', '.')?></p>
                         </div>
-                <?php   
+                <?php
+                    $counter++;   
                     }
                 ?>
             </div>
@@ -100,7 +112,11 @@
             </div>
             <div class="product-card-list">
                 <?php
+                    $counter = 0;
                     while ($dataBarang_Drum = mysqli_fetch_array($queryBarang_Drum)){
+                        if ($counter >= 4){
+                            break;
+                        }
                 ?>
                         <div class="card">
                             <img src="images/<?=$dataBarang_Drum['foto_Barang']?>">
@@ -108,6 +124,7 @@
                             <p>IDR <?=number_format($dataBarang_Drum['harga_Barang'], 0, ',', '.')?></p>
                         </div>
                 <?php
+                    $counter++;
                     }
                 ?>
             </div>
@@ -124,7 +141,11 @@
             </div>
             <div class="product-card-list">
                 <?php
+                    $counter = 0;
                     while ($dataBarang_Keyboard = mysqli_fetch_array($queryBarang_Keyboard)){
+                        if ($counter >= 4){
+                            break;
+                        }
                 ?>
                         <div class="card">
                             <img style="margin-top: 130px;"src="images/<?=$dataBarang_Keyboard['foto_Barang']?>">
@@ -132,6 +153,7 @@
                             <p>IDR <?=number_format($dataBarang_Keyboard['harga_Barang'], 0, ',', '.')?></p>
                         </div>
                 <?php
+                    $counter++;
                     }
                 ?>
             </div>
@@ -148,7 +170,11 @@
             </div>
             <div class="product-card-list">
                 <?php
+                    $counter = 0;
                     while ($dataBarang_Microphone = mysqli_fetch_array($queryBarang_Microphone)){
+                        if ($counter >= 4){
+                            break;
+                        }
                 ?>
                         <div class="card">
                             <img src="images/<?=$dataBarang_Microphone['foto_Barang']?>">
@@ -156,6 +182,7 @@
                             <p>IDR <?=number_format($dataBarang_Microphone['harga_Barang'], 0, ',', '.')?></p>
                         </div>
                 <?php
+                    $counter++;
                     }
                 ?>
             </div>
@@ -168,56 +195,8 @@
     </div>
     </div>
 
-    <section id="contact">
-        <div class="footer">
-          <div class="main">
-            <div class="list">
-              <h4>Produk Kami</h4>
-              <ul>
-                <li><a href="#">Gitar Elektrik</a></li>
-                <li><a href="#">Bass Gitar</a></li>
-                <li><a href="#">Drum</a></li>
-                <li><a href="#">Keyboard</a></li>
-                <li><a href="#">Microphone</a></li>
-              </ul>
-            </div>
-    
-            <div class="list">
-              <h4>Tentang Kami</h4>
-              <ul>
-                <li><a href="#">Tentang Symfony Shop</a></li>
-                <li><a href="#">Lokasi di Google Maps</a></li>
-              </ul>
-            </div> 
-    
-            <div class="list">
-              <h4>Hubungi Kami</h4>
-              <ul>
-                <li><a href="#">Jl. Raya Sawojajar</a></li>
-                <li><a href="#">Kota Malang</a></li>
-                <li><a href="#">+62 813-3096-2030</a></li>
-                <li><a href="#">+62 821-1606-2233</a></li>
-                <li><a href="#">symfonyshop@gmail.com</a></li>
-              </ul>
-            </div>
-    
-            <div class="list">
-              <h4>Sosial Media</h4>
-              <div class="social">
-                <a href=""><i class="fa-brands fa-facebook"></i></a>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-    
-        <div class="end-text">
-          <p>Copyright © 2024 Symfony Shop. Hak & Cipta Terlindungi</p>
-        </div>
-        
-    </section>
+    <?php
+        include "footer.php";
+    ?>
 </body>
 </html>
