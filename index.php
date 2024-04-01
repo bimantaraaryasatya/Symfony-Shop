@@ -10,7 +10,7 @@
     <?php
         include"navbar.php";
     ?>
-
+    <h1>Test</h1>
     <div class="carousel">
         
     </div>
