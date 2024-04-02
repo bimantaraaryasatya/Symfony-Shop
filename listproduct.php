@@ -79,7 +79,7 @@
 
         <div class="list-product">
             <div class="sub-title">
-                <h3>Bass Gitar</h3>
+                <h3>Bass Guitar</h3>
             </div>
             <div class="product-card-list">
                 <?php
