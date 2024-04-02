@@ -34,16 +34,16 @@
     
     <div class="main-content">
         <div class="title">
-            <h1>Produk Kami</h1>
+            <h1>Our Product</h1>
         </div>
 
         <div class="list-product" >
             <div class="sub-title">
-                <h3>Gitar Elektrik</h3>
+                <h3>Electric Guitar</h3>
             </div>
             <div class="product-card-list">
                 <?php
-                    include("functions.php");
+                    require "functions.php";
 
                     //pasang-pasang variabel
                     $queryBarang = mysqli_query($conn, "select * from barang");
@@ -72,7 +72,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">Lihat Semua <br> Produk</a>
+                    <a href="#">See All <br> Products</a>
                 </div> 
             </div>
         </div>
@@ -101,7 +101,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">Lihat Semua <br> Produk</a>
+                    <a href="#">See All <br> Products</a>
                 </div> 
             </div>
         </div>
@@ -130,7 +130,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">Lihat Semua <br> Produk</a>
+                    <a href="#">See All <br> Products</a>
                 </div> 
             </div>
         </div>
@@ -159,7 +159,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">Lihat Semua <br> Produk</a>
+                    <a href="#">See All <br> Products</a>
                 </div> 
             </div>
         </div>
@@ -188,7 +188,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">Lihat Semua <br> Produk</a>
+                    <a href="#">See All <br> Products</a>
                 </div> 
             </div>
         </div>

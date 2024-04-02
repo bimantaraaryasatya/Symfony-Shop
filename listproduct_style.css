@@ -169,7 +169,7 @@ header{
 .product-btn {
     display: grid;
     place-content: center;
-    padding: 37px 45px;
+    padding: 37px 80px;
     margin-top: 60px;
     text-align: center;
     text-decoration: none;
