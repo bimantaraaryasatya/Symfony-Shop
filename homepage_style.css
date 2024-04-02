@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.main-content{
+    margin-top: 80px;
+    padding: 10px 7%;
+}
+
+/* start of home content */
+
+.home-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-content h2{
+    font-weight: 550;
+    font-size: 35px;
+    opacity: 0.65;
+}
+
+.home-content h1{
+    font-size: 60px;
+}
+
+.home-content p{
+    color: #9a9999;
+    font-size: 18px;
+}
+
+.home-content .button{
+    margin-top: 30px;
+}
+
+.home-content .button a{
+    margin-right: 30px;
+    border-radius: 5px;
+    padding: 15px 50px;
+}
+
+.product-home-btn{
+    color: #fff;
+    background-color: #6E54FA;
+    border: 3px solid #6E54FA;
+    width: 300px;
+    height: 50px;
+}
+
+.product-home-btn:hover{
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.product-home-btn{
+    transition: 0.3s; /* agar saat selesai dihover akan kembali dengan halus */
+}
+
+.call-home-btn{
+    color: #6E54FA;
+    border: 3px solid #6E54FA;
+}
+
+.call-home-btn:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.call-home-btn{
+    transition: 0.3s; /* agar saat selesai dihover akan kembali dengan halus */
+}
+
+.image-home{
+    margin-top: 40px;
+}
+
+.image-home img{
+    width: 550px;
+}
+
+/* end of home content */
+
+
+/* start of product content */
+
+
