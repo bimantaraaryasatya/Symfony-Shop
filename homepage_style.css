@@ -143,3 +143,14 @@
     padding: 15px 70px;
     border-radius: 30px;
 }
+
+/* end of product content */
+
+
+/* start of media content */
+
+.media-content{
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}

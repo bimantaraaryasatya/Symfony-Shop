@@ -66,7 +66,19 @@
             </div>
 
             <div class="button-mix-product">
-                <a href="">See All <br> Product</a>
+                <a href="listproduct.php">See All <br> Product</a>
+            </div>
+        </div>
+
+        <!-- Third Page !-->
+        <div class="media-content">
+            <div class="media-card">
+                <img src="images/Bass-Media.png" alt="Gambar Bass">
+                <h3>Peran bass dalam musik</h3>
+            </div>
+            <div class="media-card">
+                <img src="images/Drum-Media.png" alt="Gambar Drum">
+                <h3>Peran drum dalam musik</h3>
             </div>
         </div>
 
