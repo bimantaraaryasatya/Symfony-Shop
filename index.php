@@ -36,7 +36,7 @@
         <!-- Second Page !-->
 
         <div class="product-mix-content" id="product-mix">
-            <div class="product-mix-title">
+            <div class="product-mix-title" data-aos="zoom-in" data-aos-once="true">
                 <h1>Our Product</h1>
             </div>
             
@@ -49,12 +49,12 @@
                     //query untuk mengambil id barang secara acak
                     $queryBarang_Acak = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = $randomIds LIMIT 4");
                     
-                    $delay = 0;
+                    $delay = 100;
                     
                     //loop untuk menampilkan kartu produk
                     while ($dataBarang_Acak = mysqli_fetch_array($queryBarang_Acak)){    
                 ?>
-                        <div class="card" data-aos="zoom-in" data-aos-delay="<?=$delay?>">
+                        <div class="card" data-aos="zoom-in" data-aos-delay="<?=$delay?>" data-aos-once="true"> 
                             <img src="images/<?=$dataBarang_Acak['foto_Barang']?>">
                             <p><?=$dataBarang_Acak['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Acak['harga_Barang'], 0, ',', '.')?></p>
@@ -65,24 +65,34 @@
                 ?>
             </div>
 
-            <div class="button-mix-product">
+            <div class="button-mix-product" data-aos="fade-up" data-aos-once="true">
                 <a href="listproduct.php">See All <br> Product</a>
             </div>
         </div>
 
         <!-- Third Page !-->
         <div class="media-content">
-            <div class="media-card">
-                <img src="images/Bass-Media.png" alt="Gambar Bass">
-                <h3>Peran bass dalam musik</h3>
+            <div class="subtitle-media" data-aos="zoom-in" data-aos-once="true">
+                <h1>Our Media</h1>
             </div>
-            <div class="media-card">
-                <img src="images/Drum-Media.png" alt="Gambar Drum">
-                <h3>Peran drum dalam musik</h3>
+            
+            <div class="container-card">
+                <div class="media-card" data-aos="fade-right" data-aos-delay="500" data-aos-once="true">
+                    <img src="images/Bass-Media.png" alt="Gambar Bass">
+                    <div class="bass-text">Peran bass dalam musik</div>
+                </div>
+                <div class="media-card" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
+                    <img src="images/Drum-Media.png" alt="Gambar Drum">
+                    <div class="drum-text">Peran drum dalam musik</div>
+                </div>
             </div>
         </div>
 
     </div>
+
+    <?php
+        include "footer.php";
+    ?>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
