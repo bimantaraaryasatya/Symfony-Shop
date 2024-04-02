@@ -1,0 +1,1 @@
+Symfony Shop is a website project equipped with buying and selling features and created with PHP. Some of the items sold are musical instruments such as guitars, basses, drums, keyboards and microphones.
