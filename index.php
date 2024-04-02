@@ -27,7 +27,7 @@
 
             <div class="right-content">
                 <div class="image-home">
-                    <img src="../images/home_page5.jpg" alt="">
+                    <img src="../images/home_page.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -47,6 +47,7 @@
                 $row = mysqli_fetch_assoc($result);
                 $totalRows = $row["total"];
 
+                //jika jumlah kurang dari 4 maka echo
                 if ($totalRows < 4) {
                     echo "tidak cukup data";
                 }else{
@@ -58,9 +59,11 @@
                             $randomIds[] = $randomId;
                         }
                     }
-
+                    
+                    //query untuk mengambil id barang secara acak
                     $queryBarang_Acak = mysqli_query($conn, "SELECT * FROM barang WHERE id_Barang IN (" . implode(',', $randomIds) . ")");
-
+                    
+                    //loop untuk menampilkan kartu produk
                     while ($dataBarang_Acak = mysqli_fetch_array($queryBarang_Acak)){
             ?>
                         <div class="card">

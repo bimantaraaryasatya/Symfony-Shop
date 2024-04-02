@@ -18,6 +18,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 80px;
 }
 
 .home-content h2{
@@ -89,4 +90,6 @@
 
 /* start of product content */
 
+.product-mix-content{
 
+}
