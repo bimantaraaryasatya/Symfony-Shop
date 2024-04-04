@@ -21,8 +21,12 @@
                 <h1 data-aos="fade-right" data-aos-delay="500">Rhythm of Life, Sound Your Melody</h1>
                 <p data-aos="fade-right" data-aos-delay="800">Creative music store with a complete collection of musical instruments and audio <br> equipment, as well as an inspiring community space.</p>
                 <div class="button">
-                    <a href="#product-mix" class="product-home-btn" data-aos="zoom-in" data-aos-duration="1000">Our Product</a>
-                    <a href="#" class="call-home-btn" data-aos="zoom-in" data-aos-duration="1000">Contact Us</a>
+                    <li data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#product-mix" class="product-home-btn">Our Product</a>
+                    </li>
+                    <li data-aos="zoom-in" data-aos-duration="1000">
+                        <a href="#" class="call-home-btn">Contact Us</a>
+                    </li>
                 </div>
             </div>
 

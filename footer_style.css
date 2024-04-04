@@ -65,7 +65,12 @@ body{
     color: #fff;
     transform: translateX(14px);
 }
-  
+
+.list .social li {
+    list-style: none;
+    display: inline-flex;
+}
+
 .list .social a{
     height: 40px;
     width: 40px;

@@ -41,6 +41,10 @@
     margin-top: 30px;
 }
 
+.home-content .button li{
+    display: inline-flex;
+}
+
 .home-content .button a{
     margin-right: 30px;
     border-radius: 5px;
@@ -51,8 +55,6 @@
     color: #fff;
     background-color: #6E54FA;
     border: 3px solid #6E54FA;
-    width: 300px;
-    height: 50px;
 }
 
 .product-home-btn:hover{
