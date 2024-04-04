@@ -1,0 +1,110 @@
+Setting environment for using XAMPP for Windows.
+Bimantara@BIMANTARA c:\xampp
+# mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 194
+Server version: 10.4.32-MariaDB mariadb.org binary distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> use symfonyshop
+Database changed
+MariaDB [symfonyshop]> show tables
+    -> ;
++-----------------------+
+| Tables_in_symfonyshop |
++-----------------------+
+| admin                 |
+| barang                |
+| detailpembelian       |
+| kategori              |
+| pembelian             |
+| user_lanjutan         |
+| user_register         |
++-----------------------+
+7 rows in set (0.001 sec)
+
+MariaDB [symfonyshop]> select * from admin
+    -> ;
+Empty set (0.004 sec)
+
+MariaDB [symfonyshop]> desc admin;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| id-Admin       | int(10)      | NO   | PRI | NULL    | auto_increment |
+| nama_Admin     | varchar(150) | NO   |     | NULL    |                |
+| email_Admin    | varchar(200) | NO   |     | NULL    |                |
+| password_Admin | varchar(25)  | NO   |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+4 rows in set (0.025 sec)
+
+MariaDB [symfonyshop]> desc barang;
++------------------+--------------+------+-----+---------+----------------+
+| Field            | Type         | Null | Key | Default | Extra          |
++------------------+--------------+------+-----+---------+----------------+
+| id_Barang        | int(10)      | NO   | PRI | NULL    | auto_increment |
+| nama_Barang      | varchar(175) | NO   |     | NULL    |                |
+| harga_Barang     | int(20)      | NO   |     | NULL    |                |
+| stok_Barang      | int(90)      | NO   |     | NULL    |                |
+| deskripsi_Barang | text         | NO   |     | NULL    |                |
+| foto_Barang      | varchar(225) | NO   |     | NULL    |                |
+| id-Kategori      | int(11)      | NO   | MUL | NULL    |                |
++------------------+--------------+------+-----+---------+----------------+
+7 rows in set (0.015 sec)
+
+MariaDB [symfonyshop]> desc detailpembelian;
++---------------+---------+------+-----+---------+----------------+
+| Field         | Type    | Null | Key | Default | Extra          |
++---------------+---------+------+-----+---------+----------------+
+| id-Detail     | int(10) | NO   | PRI | NULL    | auto_increment |
+| id-Barang     | int(10) | NO   | MUL | NULL    |                |
+| id-Pembelian  | int(10) | NO   | MUL | NULL    |                |
+| jumlah_Barang | int(5)  | NO   |     | NULL    |                |
++---------------+---------+------+-----+---------+----------------+
+4 rows in set (0.026 sec)
+
+MariaDB [symfonyshop]> desc kategori;
++---------------+-------------+------+-----+---------+----------------+
+| Field         | Type        | Null | Key | Default | Extra          |
++---------------+-------------+------+-----+---------+----------------+
+| id-Kategori   | int(10)     | NO   | PRI | NULL    | auto_increment |
+| nama_Kategori | varchar(30) | NO   |     | NULL    |                |
++---------------+-------------+------+-----+---------+----------------+
+2 rows in set (0.036 sec)
+
+MariaDB [symfonyshop]> desc pembelian
+    -> ;
++---------------+---------+------+-----+---------+----------------+
+| Field         | Type    | Null | Key | Default | Extra          |
++---------------+---------+------+-----+---------+----------------+
+| id-Pembelian  | int(10) | NO   | PRI | NULL    | auto_increment |
+| tgl_Pembelian | date    | NO   |     | NULL    |                |
+| id_user       | int(8)  | NO   | MUL | NULL    |                |
++---------------+---------+------+-----+---------+----------------+
+3 rows in set (0.017 sec)
+
+MariaDB [symfonyshop]> desc user_lanjutan;
++-------------+--------------+------+-----+---------+-------+
+| Field       | Type         | Null | Key | Default | Extra |
++-------------+--------------+------+-----+---------+-------+
+| emailUser   | varchar(200) | NO   |     | NULL    |       |
+| alamatUser  | text         | NO   |     | NULL    |       |
+| no-telpUser | int(15)      | NO   |     | NULL    |       |
++-------------+--------------+------+-----+---------+-------+
+3 rows in set (0.028 sec)
+
+MariaDB [symfonyshop]> desc user_register;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| id_user  | int(8)       | NO   | PRI | NULL    | auto_increment |
+| username | varchar(225) | NO   |     | NULL    |                |
+| password | varchar(225) | NO   |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+3 rows in set (0.017 sec)
+
+MariaDB [symfonyshop]>
