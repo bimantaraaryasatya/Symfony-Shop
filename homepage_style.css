@@ -126,7 +126,7 @@
     transform: translateY(-3px);
 }
 
-.list-product-home .card p{
+.card p{
     margin-left:11px;
     text-align: start;
 }
@@ -200,5 +200,41 @@
     opacity: 1; /* Menampilkan teks saat dihover */
 }
 
+/* end of media content */
 
+/* start of bestseller content */
+
+.product-bestseller-guitar{
+    margin-top: 90px;
+}
+
+.bestseller-title{
+    text-align: center;
+}
+
+.list-product-bestseller{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto)); 
+    grid-gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.button-bestseller{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-bestseller a{
+    background-color: #6E54FA;
+    color: #fff;
+    padding: 15px 70px;
+    border-radius: 30px;
+}
+
+.product-bestseller-bass{
+    margin-top: 90px;
+}
 

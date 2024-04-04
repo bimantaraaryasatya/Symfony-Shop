@@ -77,14 +77,84 @@
             </div>
             
             <div class="container-card">
-                <div class="media-card" data-aos="fade-right" data-aos-delay="500" data-aos-once="true">
+                <div class="media-card" data-aos="fade-right" data-aos-delay="300" data-aos-once="true">
                     <img src="images/Bass-Media.png" alt="Gambar Bass">
                     <div class="bass-text">Peran bass dalam musik</div>
                 </div>
-                <div class="media-card" data-aos="fade-left" data-aos-delay="500" data-aos-once="true">
+                <div class="media-card" data-aos="fade-left" data-aos-delay="300" data-aos-once="true">
                     <img src="images/Drum-Media.png" alt="Gambar Drum">
                     <div class="drum-text">Peran drum dalam musik</div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Fourth Page !-->
+
+        <div class="product-bestseller-guitar">
+            <div class="bestseller-title">
+                <h1>Guitar Bestsellers</h1>
+            </div>
+
+            <div class="list-product-bestseller">
+                 <?php
+                    
+                    $delay = 100;
+                    $counter = 0;
+                    $queryBarang_Gitar = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '1' ");
+                    while ($dataBarang_Gitar = mysqli_fetch_array($queryBarang_Gitar)){
+                        if ($counter >= 4) {
+                            break;
+                        }
+                 ?>
+                        <div class="card" data-aos="zoom-in" data-aos-delay="<?=$delay?>" data-aos-once="true">
+                            <img src="images/<?=$dataBarang_Gitar['foto_Barang']?>">
+                            <p><?=$dataBarang_Gitar['nama_Barang']?></p>
+                            <p>IDR <?=number_format($dataBarang_Gitar['harga_Barang'], 0, ',', '.')?></p>
+                        </div>
+                 <?php
+                    $delay += 300;
+                    $counter++;
+                    }
+                 ?>
+            </div>
+
+            <div class="button-bestseller" data-aos="fade-up" data-aos-once="true">
+                <a href="">See All <br> Product</a>
+            </div>
+        </div>
+
+        <!-- Fifth Page !-->
+
+        <div class="product-bestseller-bass">
+            <div class="bestseller-title" data-aos="zoom-in" data-aos-once="true">
+                <h1>Bass Bestsellers</h1>
+            </div>
+
+            <div class="list-product-bestseller">
+                <?php
+                    
+                    $delay = 100;
+                    $counter = 0;
+                    $queryBarang_Bass = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = '2' ");
+                    while ($dataBarang_Bass = mysqli_fetch_array($queryBarang_Bass)){
+                        if ($counter >= 4) {
+                            break;
+                        }
+                 ?>
+                        <div class="card" data-aos="zoom-in" data-aos-delay="<?=$delay?>" data-aos-once="true">
+                            <img src="images/<?=$dataBarang_Bass['foto_Barang']?>">
+                            <p><?=$dataBarang_Bass['nama_Barang']?></p>
+                            <p>IDR <?=number_format($dataBarang_Bass['harga_Barang'], 0, ',', '.')?></p>
+                        </div>
+                 <?php
+                    $delay += 300;
+                    $counter++;
+                    }
+                 ?>
+            </div>
+
+            <div class="button-bestseller" data-aos="fade-up" data-aos-once="true">
+                <a href="">See All <br> Product</a>
             </div>
         </div>
 
