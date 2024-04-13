@@ -154,6 +154,10 @@ header{
     transform: translateY(-3px);
 }
 
+.card a{
+    padding: 445px 252px 3px 44px;
+}
+
 .product-card-list .card p{
     margin-left:11px;
     text-align: start;

@@ -25,7 +25,7 @@
                         <a href="#product-mix" class="product-home-btn">Our Product</a>
                     </li>
                     <li data-aos="zoom-in" data-aos-duration="1000">
-                        <a href="#" class="call-home-btn">Contact Us</a>
+                        <a href="contactus.php" class="call-home-btn">Contact Us</a>
                     </li>
                 </div>
             </div>

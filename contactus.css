@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    height: 100vh;
+}
+
+.background{
+    background-color: #211951;
+    height: 408px;
+}
+
+.background-content{
+    margin-top: 86px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 12%;
+    position: relative;
+}
+
+.title{
+    display: grid;
+    color: #fff;
+    place-content: center;
+}
+
+.title h1{
+    font-size: 50px;
+}
+
+.image{
+    margin-left: auto;
+}
+
+.image img{
+    left: 0;
+    border-radius: 350px 0px 0px 500px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 10px 7%;
+    gap: 50px;
+}
+
+.card{
+    z-index: 1000;
+    margin-top: -80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 550px;
+    background-color: #fff;
+    height: 500px;
+    border: 1px solid #f0eded ;
+    padding: 20px 4%;
+}
+
+.card i{
+    font-size: 70px;
+    opacity: 0.8;
+    margin-bottom: 50px;
+}
+
+.card h4{
+    font-weight:600 ;
+    margin-bottom: 30px;
+}
+
+.card p{
+    opacity: 0.7;
+}
+
+.card a{
+    margin-top: 50px;
+    color: #4793AF;
+}

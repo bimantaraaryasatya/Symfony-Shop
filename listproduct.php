@@ -23,7 +23,7 @@
 
         <ul class="navbar-end">
             <li><a href="#" class="about-us" id="about-us-nav">About Us</a></li>
-            <li><a href="#" class="Help" id="help-nav">Help</a></li>
+            <li><a href="contactus.php" class="Help" id="help-nav">Contact Us</a></li>
         </ul>
         
         <div class="profile-cart">
@@ -64,6 +64,7 @@
                             <img src="images/<?=$dataBarang_Gitar['foto_Barang']?>">
                             <p><?=$dataBarang_Gitar['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Gitar['harga_Barang'], 0, ',', '.')?></p>
+                            <a href="detailproduct.php?id=<?=$dataBarang_Gitar['id_Barang']?>"></a>
                         </div>
                 <?php
                     $counter++;
