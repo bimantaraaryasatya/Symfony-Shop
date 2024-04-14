@@ -15,7 +15,7 @@
         <div class="background-content">
             <div class="title" data-aos="zoom-in" data-aos-duration=1000 data-aos-once="true">
                 <h1>About Us</h1>
-                <p>We are a passionate team with high dedication. Discover our<br> gitvalues, vision, and build relationships with us.</p>
+                <p>We are a passionate team with high dedication. Discover our <br> values, vision, and build relationships with us.</p>
             </div>
 
             <div class="image">
