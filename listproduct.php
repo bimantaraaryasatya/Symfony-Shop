@@ -22,7 +22,7 @@
         </div>
 
         <ul class="navbar-end">
-            <li><a href="#" class="about-us" id="about-us-nav">About Us</a></li>
+            <li><a href="aboutus.php" class="about-us" id="about-us-nav">About Us</a></li>
             <li><a href="contactus.php" class="Help" id="help-nav">Contact Us</a></li>
         </ul>
         
