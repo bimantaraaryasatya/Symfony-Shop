@@ -73,7 +73,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">See All <br> Products</a>
+                    <a href="semuaproduk.php?id-kategori=1">See All <br> Products</a>
                 </div> 
             </div>
         </div>
@@ -94,6 +94,7 @@
                             <img src="images/<?=$dataBarang_Bass['foto_Barang']?>">
                             <p><?=$dataBarang_Bass['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Bass['harga_Barang'], 0, ',', '.')?></p>
+                            <a href="detailproduct.php?id=<?=$dataBarang_Bass['id_Barang']?>"></a>
                         </div>
                 <?php
                     $counter++;   
@@ -102,7 +103,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">See All <br> Products</a>
+                    <a href="semuaproduk.php?id-kategori=2">See All <br> Products</a>
                 </div> 
             </div>
         </div>
@@ -123,6 +124,7 @@
                             <img src="images/<?=$dataBarang_Drum['foto_Barang']?>">
                             <p style="margin-top: 37px;"><?=$dataBarang_Drum['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Drum['harga_Barang'], 0, ',', '.')?></p>
+                            <a href="detailproduct.php?id=<?=$dataBarang_Drum['id_Barang']?>"></a>
                         </div>
                 <?php
                     $counter++;
@@ -131,7 +133,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">See All <br> Products</a>
+                    <a href="semuaproduk.php?id-kategori=3">See All <br> Products</a>
                 </div> 
             </div>
         </div>
@@ -152,6 +154,7 @@
                             <img style="margin-top: 130px;"src="images/<?=$dataBarang_Keyboard['foto_Barang']?>">
                             <p><?=$dataBarang_Keyboard['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Keyboard['harga_Barang'], 0, ',', '.')?></p>
+                            <a href="detailproduct.php?id=<?=$dataBarang_Keyboard['id_Barang']?>"></a>
                         </div>
                 <?php
                     $counter++;
@@ -160,7 +163,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">See All <br> Products</a>
+                    <a href="semuaproduk.php?id-kategori=4">See All <br> Products</a>
                 </div> 
             </div>
         </div>
@@ -181,6 +184,7 @@
                             <img src="images/<?=$dataBarang_Microphone['foto_Barang']?>">
                             <p><?=$dataBarang_Microphone['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Microphone['harga_Barang'], 0, ',', '.')?></p>
+                            <a href="detailproduct.php?id=<?=$dataBarang_Microphone['id_Barang']?>"></a>
                         </div>
                 <?php
                     $counter++;
@@ -189,7 +193,7 @@
             </div>
             <div class="button">
                 <div class="product-btn">
-                    <a href="#">See All <br> Products</a>
+                    <a href="semuaproduk.php?id-kategori=5">See All <br> Products</a>
                 </div> 
             </div>
         </div>

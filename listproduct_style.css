@@ -173,8 +173,8 @@ header{
 .product-btn {
     display: grid;
     place-content: center;
-    padding: 37px 80px;
     margin-top: 60px;
+    padding: 37px 0px;
     text-align: center;
     text-decoration: none;
     height: 50px;
@@ -191,6 +191,7 @@ header{
 .product-btn a{
     text-decoration: none;
     color: #fff;
+    padding: 13px 80px;
 }
 
 #contact{
