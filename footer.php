@@ -66,7 +66,7 @@
           </div>
         </div>
     
-        <div class="end-text" data-aos="fade-up" data-aos-duration=800 data-aos-once="true">
+        <div class="end-text" data-aos="zoom-in" data-aos-duration=1000 data-aos-once="true">
           <p>Copyright © 2024 Symfony Shop. All rights reserved</p>
         </div>
         
