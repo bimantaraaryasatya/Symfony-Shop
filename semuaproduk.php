@@ -31,6 +31,7 @@
                         <img src="images/<?=$dataProduk['foto_Barang']?>" alt="">
                         <p><?= $dataProduk['nama_Barang']?></p>
                         <p>IDR <?=number_format($dataProduk['harga_Barang'], 0, ',', '.')?></p>
+                        <a href="detailproduct.php?id=<?=$dataProduk['id_Barang']?>"></a>
                     </div>
             <?php 
                 }

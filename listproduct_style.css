@@ -132,10 +132,6 @@ header{
     margin-top: 5rem; 
 }
 
-.product-card-list:hover{
-    cursor: pointer;
-}
-
 .card img{
     margin-bottom: 10px;
     width: 250.33px;
@@ -151,6 +147,7 @@ header{
 .card:hover{
     box-shadow: 5px 30px 56.1276px rgb(55 55 55/ 12%);
     border: 1px solid transparent;
+    cursor: pointer;
     transform: translateY(-3px);
 }
 
