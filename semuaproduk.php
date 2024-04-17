@@ -20,8 +20,10 @@
             <?php
                 $id_Kategori = $_GET['id-kategori'];
                 $queryProduk = mysqli_query($conn, "SELECT * FROM barang WHERE `id-Kategori` = $id_Kategori");
+                $queryKategori = mysqli_query($conn, "SELECT * FROM  kategori WHERE `id-Kategori` = $id_Kategori");
+                $dataKategori = mysqli_fetch_array($queryKategori);
             ?>
-            <h1>All Product</h1>
+            <h1><?= $dataKategori['nama_Kategori']?></h1>
         </div>
         <div class="container">
             <?php

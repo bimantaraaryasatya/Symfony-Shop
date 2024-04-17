@@ -140,7 +140,7 @@
 
         <div class="list-product">
             <div class="sub-title">
-                <h3>Keyboard</h3>
+                <h3>Piano & Keyboard</h3>
             </div>
             <div class="product-card-list">
                 <?php
