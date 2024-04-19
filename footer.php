@@ -15,19 +15,19 @@
             <div class="list">
               <h4 data-aos="zoom-in-right" data-aos-duration=1000 data-aos-once="true">Our Product</h4>
               <ul>
-                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=200 data-aos-once="true"><a href="#">Electric Guitar</a></li>
-                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=400 data-aos-once="true"><a href="#">Bass Guitar</a></li>
-                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=600 data-aos-once="true"><a href="#">Drum</a></li>
-                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=800 data-aos-once="true"><a href="#">Keyboard</a></li>
-                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=1000 data-aos-once="true"><a href="#">Microphone</a></li>
+                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=200 data-aos-once="true"><a href="semuaproduk.php?id-kategori=1">Electric Guitar</a></li>
+                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=400 data-aos-once="true"><a href="semuaproduk.php?id-kategori=2">Bass Guitar</a></li>
+                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=600 data-aos-once="true"><a href="semuaproduk.php?id-kategori=3">Drum</a></li>
+                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=800 data-aos-once="true"><a href="semuaproduk.php?id-kategori=4">Keyboard</a></li>
+                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=1000 data-aos-once="true"><a href="semuaproduk.php?id-kategori=5">Microphone</a></li>
               </ul>
             </div>
     
             <div class="list">
               <h4 data-aos="zoom-in-right" data-aos-duration=1000 data-aos-once="true">About Us</h4>
               <ul>
-                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=200 data-aos-once="true"><a href="#">About Symfony Shop</a></li>
-                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=400 data-aos-once="true"><a href="#">Location on Google Maps</a></li>
+                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=200 data-aos-once="true"><a href="aboutus.php">About Symfony Shop</a></li>
+                <li data-aos="fade-right" data-aos-duration=1000 data-aos-delay=400 data-aos-once="true"><a href="https://www.google.com/maps/place/Jl.+Danau+Ranau,+Sawojajar,+Kec.+Kedungkandang,+Kota+Malang,+Jawa+Timur+65139/data=!4m2!3m1!1s0x2dd6285d1f051a77:0xd137e941d65978a?sa=X&ved=1t:242&ictx=111">Location on Google Maps</a></li>
               </ul>
             </div>
     

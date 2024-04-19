@@ -64,7 +64,7 @@
                             <img src="images/<?=$dataBarang_Gitar['foto_Barang']?>">
                             <p><?=$dataBarang_Gitar['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Gitar['harga_Barang'], 0, ',', '.')?></p>
-                            <a href="detailproduct.php?id=<?=$dataBarang_Gitar['id_Barang']?>"></a>
+                            <a href="detailproduct.php?id_Barang=<?=$dataBarang_Gitar['id_Barang']?>&id-kategori=<?=$dataBarang_Gitar['id-Kategori']?>"></a>
                         </div>
                 <?php
                     $counter++;
@@ -94,7 +94,7 @@
                             <img src="images/<?=$dataBarang_Bass['foto_Barang']?>">
                             <p><?=$dataBarang_Bass['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Bass['harga_Barang'], 0, ',', '.')?></p>
-                            <a href="detailproduct.php?id=<?=$dataBarang_Bass['id_Barang']?>"></a>
+                            <a href="detailproduct.php?id_Barang=<?=$dataBarang_Bass['id_Barang']?>&id-kategori=<?=$dataBarang_Bass['id-Kategori']?>"></a>
                         </div>
                 <?php
                     $counter++;   
@@ -124,7 +124,7 @@
                             <img src="images/<?=$dataBarang_Drum['foto_Barang']?>">
                             <p style="margin-top: 37px;"><?=$dataBarang_Drum['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Drum['harga_Barang'], 0, ',', '.')?></p>
-                            <a href="detailproduct.php?id=<?=$dataBarang_Drum['id_Barang']?>"></a>
+                            <a href="detailproduct.php?id_Barang=<?=$dataBarang_Drum['id_Barang']?>&id-kategori=<?=$dataBarang_Drum['id-Kategori']?>"></a>
                         </div>
                 <?php
                     $counter++;
@@ -154,7 +154,7 @@
                             <img style="margin-top: 130px;"src="images/<?=$dataBarang_Keyboard['foto_Barang']?>">
                             <p><?=$dataBarang_Keyboard['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Keyboard['harga_Barang'], 0, ',', '.')?></p>
-                            <a href="detailproduct.php?id=<?=$dataBarang_Keyboard['id_Barang']?>"></a>
+                            <a href="detailproduct.php?id_Barang=<?=$dataBarang_Keyboard['id_Barang']?>&id-kategori=<?=$dataBarang_Keyboard['id-Kategori']?>"></a>
                         </div>
                 <?php
                     $counter++;
@@ -184,7 +184,7 @@
                             <img src="images/<?=$dataBarang_Microphone['foto_Barang']?>">
                             <p><?=$dataBarang_Microphone['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Microphone['harga_Barang'], 0, ',', '.')?></p>
-                            <a href="detailproduct.php?id=<?=$dataBarang_Microphone['id_Barang']?>"></a>
+                            <a href="detailproduct.php?id_Barang=<?=$dataBarang_Microphone['id_Barang']?>&id-kategori=<?=$dataBarang_Microphone['id-Kategori']?>"></a>
                         </div>
                 <?php
                     $counter++;
