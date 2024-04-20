@@ -60,8 +60,8 @@
 
             <div class="detail-product-kategori">
                 <p><strong>Kategori: </strong><a href="semuaproduk.php?id-kategori=<?= $dataDetail_Product['id-Kategori']?>"><?= $dataDetail_Kategori['nama_Kategori']?></a></p>
-                <p><strong>Brand: </strong>Gibson</p>
-                <p><strong>Status: </strong>Brand New</p>
+                <p><strong>Brand: </strong><?= $dataDetail_Product['brand_Barang']?></p>
+                <p><strong>Status: </strong><?= $dataDetail_Product['status_Barang']?></p>
             </div>
         </div>
     </div>
