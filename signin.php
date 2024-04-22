@@ -1,4 +1,10 @@
 <?php
+    session_start();
+
+    if(isset($_SESSION["login"])){
+        header("Location: index.php");
+        exit;
+    }
     require "functions.php";
     
     if (isset($_POST["login"])) {
@@ -23,6 +29,9 @@
             //cek password
             $row = mysqli_fetch_assoc($result);
             if (password_verify($password, $row["password"])) {
+                // set session
+                $_SESSION["login"]= true;
+
                 echo"   <script> 
                             alert('Berhasil Sign In')
                             window.location.href = 'index.php' 

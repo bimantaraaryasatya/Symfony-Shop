@@ -55,7 +55,6 @@
 
     function login (){
         global $conn;
-
         
     }
 ?>

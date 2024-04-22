@@ -1,3 +1,14 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION["login"])){
+        header("Location: signin.php");
+        exit;
+    }
+
+    require "functions.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +54,6 @@
             </div>
             <div class="product-card-list">
                 <?php
-                    require "functions.php";
 
                     //pasang-pasang variabel
                     $queryBarang = mysqli_query($conn, "select * from barang");

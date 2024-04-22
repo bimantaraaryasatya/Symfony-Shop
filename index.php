@@ -58,10 +58,11 @@
                     //loop untuk menampilkan kartu produk
                     while ($dataBarang_Acak = mysqli_fetch_array($queryBarang_Acak)){    
                 ?>
-                        <div class="card" data-aos="zoom-in" data-aos-delay="<?=$delay?>" data-aos-once="true"> 
+                        <div class="card" id="card-acak" data-aos="zoom-in" data-aos-delay="<?=$delay?>" data-aos-once="true"> 
                             <img src="images/<?=$dataBarang_Acak['foto_Barang']?>">
                             <p><?=$dataBarang_Acak['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Acak['harga_Barang'], 0, ',', '.')?></p>
+                            <a href="detailproduct.php?id_Barang=<?=$dataBarang_Acak['id_Barang']?>&id-kategori=<?=$dataBarang_Acak['id-Kategori']?>"></a>
                         </div>
                 <?php
                     $delay += 300;
@@ -114,6 +115,7 @@
                             <img src="images/<?=$dataBarang_Gitar['foto_Barang']?>">
                             <p><?=$dataBarang_Gitar['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Gitar['harga_Barang'], 0, ',', '.')?></p>
+                            <a href="detailproduct.php?id_Barang=<?=$dataBarang_Gitar['id_Barang']?>&id-kategori=<?=$dataBarang_Gitar['id-Kategori']?>"></a>
                         </div>
                  <?php
                     $delay += 300;
@@ -149,6 +151,7 @@
                             <img src="images/<?=$dataBarang_Bass['foto_Barang']?>">
                             <p><?=$dataBarang_Bass['nama_Barang']?></p>
                             <p>IDR <?=number_format($dataBarang_Bass['harga_Barang'], 0, ',', '.')?></p>
+                            <a href="detailproduct.php?id_Barang=<?=$dataBarang_Bass['id_Barang']?>&id-kategori=<?=$dataBarang_Bass['id-Kategori']?>"></a>
                         </div>
                  <?php
                     $delay += 300;

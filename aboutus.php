@@ -1,3 +1,14 @@
+<?php
+    session_start();
+
+    if(!isset($_SESSION["login"])){
+        header("Location: signin.php");
+        exit;
+    }
+
+    require "functions.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
