@@ -27,7 +27,14 @@
         </ul>
         
         <div class="profile-cart">
-            <a href="signin.php"><i class="fa-solid fa-user"></i></a>
+            <details>
+                <summary><i class="fa-solid fa-user"></i></summary>
+                <ul>
+                    <li><a href="signin.php"><i class="fa-solid fa-right-to-bracket"></i> Sign in</a></li>
+                    <li><a href="profile.php"><i class="fa-solid fa-address-card"></i> Profile</a></li>
+                    <li><a href="logout.php"><i class="fa-solid fa-xmark" id="icon-details-last"></i> Log Out</a></li>
+                </ul>
+            </details>
             <a href="keranjang.php"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
 

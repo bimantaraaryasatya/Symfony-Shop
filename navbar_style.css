@@ -92,9 +92,60 @@ header{
 }
 
 .profile-cart{
+    display: flex;
     color: #fff;
     position: absolute;
     right: 30px;
+}
+
+.profile-cart summary {
+    display: inline-block; /* Memastikan elemen summary berperilaku seperti elemen blok tanpa mengambil seluruh baris */
+    cursor: pointer; /* Mengubah kursor menjadi penunjuk saat mengarahkan ke elemen summary */
+    margin-right: 50px;
+}
+
+.profile-cart summary {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+.profile-cart ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #000;
+    background-color: white;
+    border: 1px solid #f0eded;
+    border-radius: 5px;
+    width: 135px;
+    height: 800%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Menghapus titik dari daftar */
+}
+
+.profile-cart ul li a{
+    color: #000;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-cart ul li a i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.profile-cart ul li:first-child {
+    margin-top: 30px;
+}
+
+#icon-details-last {
+    font-size: 28px;
 }
 
 .profile-cart a{
