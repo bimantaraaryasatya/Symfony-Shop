@@ -22,25 +22,9 @@
 </head>
 <body>
     <header>
-
-        <ul class="navbar-start">
-          <li><a href="index.php" class="home" id="home-nav">Home</a></li>
-          <li><a href="listproduct.php" class="product" id="product-nav">Product</a></li>
-        </ul>
-
-        <div class="logo-img">
-            <img src="images/Logo.png">
-        </div>
-
-        <ul class="navbar-end">
-            <li><a href="aboutus.php" class="about-us" id="about-us-nav">About Us</a></li>
-            <li><a href="contactus.php" class="Help" id="help-nav">Contact Us</a></li>
-        </ul>
-        
-        <div class="profile-cart">
-            <a href="signin.php"><i class="fa-solid fa-user"></i></a>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-        </div>
+        <?php
+            include "navbar.php";
+        ?>
     </header>
     
     <div class="main-content">

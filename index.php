@@ -125,7 +125,7 @@
             </div>
 
             <div class="button-bestseller" data-aos="fade-up" data-aos-once="true">
-                <a href="">See All <br> Product</a>
+                <a href="semuaproduk.php?id-kategori=1">See All <br> Product</a>
             </div>
         </div>
 
@@ -161,7 +161,7 @@
             </div>
 
             <div class="button-bestseller" data-aos="fade-up" data-aos-once="true">
-                <a href="">See All <br> Product</a>
+                <a href="semuaproduk.php?id-kategori=2">See All <br> Product</a>
             </div>
         </div>
 

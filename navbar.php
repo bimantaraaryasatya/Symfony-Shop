@@ -28,7 +28,7 @@
         
         <div class="profile-cart">
             <a href="signin.php"><i class="fa-solid fa-user"></i></a>
-            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="keranjang.php"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
 
     </header>
