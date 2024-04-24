@@ -125,11 +125,16 @@ header{
     list-style-type: none; /* Menghapus titik dari daftar */
 }
 
+.profile-cart ul li a:hover{
+    background-color: #6e54fa;
+    color: #fff;
+}
+
 .profile-cart ul li a{
     color: #000;
     width: 100%;
-    margin-top: 30px;
-    padding: 10px;
+    margin-top: 10px;
+    padding: 23px 13px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -141,7 +146,7 @@ header{
 }
 
 .profile-cart ul li:first-child {
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 #icon-details-last {

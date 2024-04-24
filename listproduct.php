@@ -2,8 +2,10 @@
     session_start();
 
     if(!isset($_SESSION["login"])){
-        header("Location: signin.php");
-        exit;
+        echo "  <script> 
+                    alert('Login Terlebih Dahulu')
+                    window.location.href = 'signin.php'
+                </script>";
     }
 
     require "functions.php";
