@@ -102,7 +102,7 @@
         <div class="symfony-team-container">
             <div class="symfony-team-card">
                 <div class="symfony-team-image">
-                    <img src="images/bimantara_img_aboutus.jpg" alt="">        
+                    <img src="images/fawwaz_img_aboutus.jpg" alt="">        
                 </div>
                 <div class="symfony-team-bio">
                     <p>Muhammad Fawwaz</p>

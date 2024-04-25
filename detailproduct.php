@@ -52,11 +52,18 @@
                 <?php } else{?>
                     <span class="stock">Habis!</span>
                 <?php }?></span></p>
+                
             </div>
 
-            <div class="detail-product-button">
-                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
+            <?php if($dataDetail_Product['stok_Barang'] > 0){ ?>
+                <form action="insert_cart.php" method="POST">
+                    <input type="hidden" name="id_buku" value="<?=$data_buku['id_buku']?>">
+                    <!-- input number jumlah beli -->
+                    <button class="detail-product-button" type="submit" style="height: 50px; border:none;">
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </button>
+                </form>
+            <?php }?>
 
             <div class="detail-product-kategori">
                 <p><strong>Kategori: </strong><a href="semuaproduk.php?id-kategori=<?= $dataDetail_Product['id-Kategori']?>"><?= $dataDetail_Kategori['nama_Kategori']?></a></p>
@@ -67,7 +74,7 @@
     </div>
 
     <?php
-        include "footer.php";
+        
     ?>
 </body>
 </html>

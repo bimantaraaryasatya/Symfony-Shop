@@ -63,6 +63,7 @@ body{
 
 .detail-product-button a{
     background-color: #6E54FA;
+    border: 1px solid #6E54FA;
     padding: 20px 100px;
     border-radius: 5px;
 
