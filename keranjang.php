@@ -28,6 +28,11 @@
                     <h4>Cart</h4>
                 </div>
                 <?php
+                    $subtotal = 0;
+                    $jumlahBarang = 0;
+                    $shipping = 0;
+                    $tax = 0;
+                    $total = 0;
                     if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){ ?>
                         <?php foreach (@$_SESSION['cart'] as $key => $product) {?>
                             <section class="cart-main">
@@ -42,6 +47,11 @@
                                     </div>
 
                                     <div class="cart-category">
+                                        <?php
+                                            $query_Kategori_Cart = mysqli_query($conn, "SELECT * FROM kategori WHERE `id-Kategori` = '".$product['id_Kategori']."'");
+                                            $data_Kategori_Cart = mysqli_fetch_array($query_Kategori_Cart);
+                                        ?>
+                                        <p><?= $data_Kategori_Cart['nama_Kategori']?></p>
                                         <p><?= $product['brand_Barang']?></p>
                                         <p><?= $product['status_Barang']?></p>
                                     </div>
@@ -57,10 +67,14 @@
                                     </div>
 
                                     <div class="cart-remove-product">
-                                        <i class="fa-solid fa-trash-can"></i>
+                                        <a href="delete_cart.php?id=<?=$key?>" onclick="return confirm('Apakah anda yakin menghapus data ini?')"><i class="fa-solid fa-trash-can"></i></a>
                                     </div>
                                 </div>
                             </section>
+                            <?php
+                                $subtotal += $product['harga_Barang'];
+                                $jumlahBarang ++;
+                            ?>
                         <?php }?>
                 <?php
                     } else{
@@ -79,21 +93,28 @@
             <div class="summary-price">
                 <div class="subtotal">
                     <p>Subtotal: </p>
-                    <p>IDR 15.300.000</p>
+                    <p>IDR <?= number_format($subtotal, 0, ',', '.') ?></p>
                 </div>
                 <div class="shipping-costs">
+                    <?php 
+                        if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
+                            $shipping = 10000;
+                        } else{
+                            $shipping = 0;
+                        }
+                    ?>
                     <p>Estimated Shipping</p>
-                    <p>IDR 50.000</p>
+                    <p>IDR <?= number_format($shipping * $jumlahBarang, 0, ',', '.')?></p>
                 </div>
                 <div class="tax">
                     <p>Estimated Tax</p>
-                    <p>IDR 5.000</p>
+                    <p>IDR <?= number_format($subtotal * 0.0001, 0, ',', '.')?></p>
                 </div>
             </div>
 
             <div class="summary-total">
                 <p>Total</p>
-                <p>IDR 30.000.000</p>
+                <p>IDR <?= number_format($total = $subtotal + $shipping + $tax, 0, ',', '.') ?></p>
             </div>
 
             <div class="button-checkout">

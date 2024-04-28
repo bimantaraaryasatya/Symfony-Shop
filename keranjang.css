@@ -109,7 +109,7 @@ body{
     text-decoration: underline;
 }
 
-.cart-remove-product{
+.cart-remove-product a{
     margin-top: 5px;   
     color: red;
     display: flex;
@@ -119,7 +119,7 @@ body{
     border: 1px solid #f0eded;
     border-radius: 90px;
     width: 9.5%;
-    height: 13%;
+    height: 50px;
     text-align: center;
 }
 
