@@ -61,17 +61,28 @@ body{
     margin-top: 70px;
 }
 
-.detail-product-button a{
+.detail-product-button{
     background-color: #6E54FA;
     border: 1px solid #6E54FA;
-    padding: 20px 100px;
+    padding: 16px 100px;
     border-radius: 5px;
 
 }
 
-.detail-product-button a i{
+.detail-product-button:hover{
+    cursor: pointer;
+}
+
+.icon-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-product-button i{
     color: #fff;
-    font-size: 23px;
+    font-size: 20px;
+    display: flex;
 }
 
 .detail-product-kategori{

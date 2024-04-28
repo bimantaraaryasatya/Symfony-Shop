@@ -56,11 +56,13 @@
             </div>
 
             <?php if($dataDetail_Product['stok_Barang'] > 0){ ?>
-                <form action="insert_cart.php" method="POST">
-                    <input type="hidden" name="id_buku" value="<?=$data_buku['id_buku']?>">
+                <form id="addToCartForm" action="insert_cart.php" method="POST">
+                    <input type="hidden" name="id_Barang" value="<?=$dataDetail_Product['id_Barang']?>">
                     <!-- input number jumlah beli -->
-                    <button class="detail-product-button" type="submit" style="height: 50px; border:none;">
-                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    <button class="detail-product-button" type="submit" style="height: 50px; border:none;" onclick="addToCart()">
+                        <div class="icon-cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </div>
                     </button>
                 </form>
             <?php }?>
