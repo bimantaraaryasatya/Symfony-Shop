@@ -118,7 +118,7 @@
             </div>
 
             <div class="button-checkout">
-                <a href="">Checkout</a>
+                <a href="checkout.php">Checkout</a>
             </div>
 
         </div>
