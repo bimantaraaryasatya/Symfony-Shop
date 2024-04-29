@@ -31,6 +31,7 @@
             if (password_verify($password, $row["password"])) {
                 // set session
                 $_SESSION["login"]= true;
+                $_SESSION["username"]= $username;
 
                 echo"   <script> 
                             alert('Berhasil Sign In')

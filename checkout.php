@@ -11,6 +11,11 @@ if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
             unset($_SESSION['cart'][$key]);
         }
     }
+}else{
+    echo "  <script>
+            alert('Keranjang Kosong')
+            window.location.href = 'keranjang.php'
+            </script>";
 }
 
 echo "  <script>
