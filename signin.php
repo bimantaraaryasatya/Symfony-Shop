@@ -31,7 +31,7 @@
             if (password_verify($password, $row["password"])) {
                 // set session
                 $_SESSION["login"]= true;
-                $_SESSION["username"]= $username;
+                $_SESSION["id_user"] = $row["id_user"];
 
                 echo"   <script> 
                             alert('Berhasil Sign In')
