@@ -24,7 +24,7 @@ require "functions.php";
 
                 <div class="sidebar-nav">
                     <ul>
-                        <li><a href="">Profile</a></li>
+                        <li><a href="#Profile">Profile</a></li>
                         <li><a href="">History</a></li>
                         <li><a href="">My Order</a></li>
                         <li><a href="">Setting</a></li>
