@@ -46,11 +46,11 @@
             <div class="detail-product-status">
                 <p>IDR <?=number_format($dataDetail_Product['harga_Barang'], 0, ',', '.')?></p>
                 <p><strong>Stok: </strong><span><?php if($dataDetail_Product['stok_Barang'] > 10){ ?>
-                    Tersedia
+                    Available
                 <?php } elseif($dataDetail_Product['stok_Barang'] <= 10 AND $dataDetail_Product['stok_Barang'] >= 1){?>
-                    <span class="stock">Tersisa <?= $dataDetail_Product['stok_Barang']?></span>
+                    <span class="stock"> <?= $dataDetail_Product['stok_Barang']?> Left in Stock</span> 
                 <?php } else{?>
-                    <span class="stock">Habis!</span>
+                    <span class="stock">Out of stock!</span>
                 <?php }?></span></p>
                 
             </div>
@@ -68,7 +68,7 @@
             <?php }?>
 
             <div class="detail-product-kategori">
-                <p><strong>Kategori: </strong><a href="semuaproduk.php?id-kategori=<?= $dataDetail_Product['id-Kategori']?>"><?= $dataDetail_Kategori['nama_Kategori']?></a></p>
+                <p><strong>Category: </strong><a href="semuaproduk.php?id-kategori=<?= $dataDetail_Product['id-Kategori']?>"><?= $dataDetail_Kategori['nama_Kategori']?></a></p>
                 <p><strong>Brand: </strong><?= $dataDetail_Product['brand_Barang']?></p>
                 <p><strong>Status: </strong><?= $dataDetail_Product['status_Barang']?></p>
             </div>

@@ -106,6 +106,56 @@ require "functions.php";
                         </div>
                     </div>
                 </div>
+
+                <div class="user-profile-history">
+                    <div class="user-profile-history-title">
+                        <h1>Purchase history</h1>
+                    </div>
+
+                    <div class="user-profile-history-table">
+                        <table>
+                    <?php 
+                        $query_history_pembelian = "SELECT p.nama_Barang, p.harga_Barang, k.nama_Kategori, p.brand_Barang, b.tgl_pembelian
+                        FROM pembelian b
+                        INNER JOIN barang p ON b.id_Barang = p.id_Barang
+                        INNER JOIN kategori k ON p.`id-Kategori` = k.`id-Kategori`
+                        WHERE b.id_user = $id_user";
+
+                        $result_pembelian = mysqli_query($conn, $query_history_pembelian);
+
+                        if (!$result_pembelian) {
+                            die("Query error: " . mysqli_error($conn));
+                        }
+
+                        if (mysqli_num_rows($result_pembelian) > 0) { ?>
+                            <tr style="text-align:center;">
+                                <th width="450px">Product Name</th>
+                                <th width="200px">Product Price</th>
+                                <th width="150px">Category</th>
+                                <th width="150px">Brand</th>
+                                <th width="300px">Purchase date</th>
+                            </tr>
+                    <?php        
+                        }
+                        $counter = 0;
+                        while ($row_pembelian = mysqli_fetch_assoc($result_pembelian)) { 
+                            if ($counter >= 8) {
+                                break;
+                            }?>
+                            <tr style="text-align:center;">
+                                <td><?= $row_pembelian['nama_Barang']?></td>
+                                <td>IDR <?= number_format($row_pembelian['harga_Barang'], 0, ',', '.')?></td>
+                                <td><?= $row_pembelian['nama_Kategori']?></td>
+                                <td><?= $row_pembelian['brand_Barang']?></td>
+                                <td><?= date('d-m-Y', strtotime($row_pembelian['tgl_pembelian'])) ?></td>
+                            </tr>
+                    <?php
+                        $counter++;
+                        }
+                    ?>  
+                        </table>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
