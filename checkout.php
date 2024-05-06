@@ -18,8 +18,21 @@ if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
             }
             $id_Barang = $product['id_Barang'];
             $tanggal_pembelian = date('Y-m-d');
-            $query_insert_pembelian = mysqli_query($conn, "INSERT INTO pembelian (tgl_Pembelian, id_user, id_Barang) VALUES ('$tanggal_pembelian', $id_user, $id_Barang)");
+            $query_insert_pembelian = mysqli_query($conn, "INSERT INTO pembelian (tgl_Pembelian, id_user, id_Barang) 
+            VALUES ('$tanggal_pembelian', $id_user, $id_Barang) 
+            ON DUPLICATE KEY UPDATE id_user = '$id_user'");
+
             
+            if ($query_insert_pembelian) {
+                echo "Berhasil";
+            }else{
+                echo mysqli_error($conn);
+                echo "  <script>
+                            alert('Error')
+                            window.location.href = 'keranjang.php'
+                        </script>";
+                die();
+            }
             unset($_SESSION['cart'][$key]);
         }
     }
@@ -29,9 +42,8 @@ if(isset($_SESSION['cart']) && !empty($_SESSION['cart'])){
             window.location.href = 'keranjang.php'
             </script>";
 }
-
 echo "  <script>
-            alert('Pesanan anda berhasil diperoses')
+            alert('Pesanan Diperoses')
             window.location.href = 'keranjang.php'
-        </script>"
+        </script>";
 ?>

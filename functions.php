@@ -48,7 +48,7 @@
         $password_hashed = password_hash($password, PASSWORD_DEFAULT); //password_default berfungsi untuk memilih algoritma default
         
         //tambahkan user baru ke database
-        mysqli_query($conn,"INSERT INTO user_register VALUE('', '$username', '$password_hashed')");
+        mysqli_query($conn,"INSERT INTO user_register VALUE('', '$username', '$password_hashed', '', '', '')");
     
         return mysqli_affected_rows($conn);
     }
